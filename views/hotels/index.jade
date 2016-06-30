@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+
+  h1 #{title}
+  form(method='get' action='/sign-out')
+    button Sign Out
+  ul
+    for hotel in hotels
+      li #{hotel.name} - #{hotel.location}
+
+  a(id='create-hotel' href='/hotels/new') Make a new Hotel

@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+
+  h1 NEW HOTEL
+
+  form(method='POST' action='/hotels')
+    input(type='text' name='name' id='hotel-name-input' placeholder='name')
+    input(type='text' name='location' id='hotel-location-input' placeholder='location')
+    button(id='submit-btn') Create Hotel

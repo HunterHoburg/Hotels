@@ -1,0 +1,8 @@
+extends ../layout
+
+block content
+  h1 Sign In
+  form(method='post')
+    input(type='text' placeholder='email' id='email-input', name='email' value='danny@do.com')
+    input(type='password' placeholder='password' id='password-input', name='password' value='danny')
+    button(id='submit-btn') Sign In
